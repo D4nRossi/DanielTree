@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+body{
+    padding: 16px;
+    text-align: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.accountName{
+    font-size: .9em;
+}
+
+.tagLine{
+    font-size: 1.4em;
+    text-transform: capitalize;
+}
+
+.profileImage{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 6px solid #000;
+    margin: 0 auto;
+}
+
+#socialRow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    font-size: 2em;
+}
+
+#whereNext{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 16px 0px 8px 0px;
+}
+
+.whiteButton{
+    background-color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1em;
+    text-transform: capitalize;
+    border-radius: 6px;
+    color: #fa9a1b;
+    text-decoration: none;
+}
+
+
+/*Parte showcase*/
+.showcase{
+    padding: 16px 0px 16px 0px;
+}
+
+.container-showcase{
+    height: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+.container-showcase-imgs{
+    border-radius: 10px;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase-icons{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tittle-showcase{
+    margin-bottom: 7px;
+    transition: ease .3s;
+}
+
+
+.active{
+    transform: scale(1.3);
+    transition: ease .3s;
+}
+
+
+.orangeButton{
+    width: 100%;
+    background-color: #fa9a1b;
+    border: none;
+    font-size: 1.3em;
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.supportMe{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 16px;
+}
