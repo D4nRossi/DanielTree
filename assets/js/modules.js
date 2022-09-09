@@ -5,6 +5,13 @@ resumeTagLineText,
 imagePath, 
 showcaseContainer} from './data.js'
 
+export function dev(){
+    window.oncontextmenu=function(){
+        alert('Botão direito desativado - código fonte está no GitHub');
+        return false;
+    }
+}
+
 export function createSocialLinks(){
     const social = document.getElementById('socialRow');
     for(let link of socialLinks){
@@ -129,7 +136,7 @@ export function showcaseIcons(){
 
     if(title.innerHTML = title1){
         layout1.addEventListener('click', ()=>{
-            
+
         });
         layout2.addEventListener('click', ()=>{
             window.location.href = 'https://jogodamemorialegal.netlify.app/'
