@@ -5,8 +5,7 @@ accountName,
 resume, 
 accountImage,
 showcaseIcons,
-dev,
-block} from './modules.js'
+dev} from './modules.js'
 
 
 
@@ -17,4 +16,3 @@ createSocialLinks();
 createWhereNextLinks();
 showcaseIcons();
 dev();
-block();
