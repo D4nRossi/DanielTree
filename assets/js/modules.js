@@ -5,12 +5,12 @@ resumeTagLineText,
 imagePath, 
 showcaseContainer} from './data.js'
 
-export function dev(){
+/*export function dev(){
     window.oncontextmenu=function(){
         alert('Botão direito desativado - código fonte está no GitHub');
         return false;
     }
-}
+}*/
 
 /*export function block(){
     document.onkeydown = function (e){
