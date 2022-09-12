@@ -12,10 +12,11 @@ export function dev(){
     }
 }
 
-export function block(){
+/*export function block(){
     document.onkeydown = function (e){
             if(event.keyCode == 123){
                 return false;
+                alert('F12 desativado - código fonte no GitHub')
             }
             if(e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)){
                 return false;
@@ -30,7 +31,7 @@ export function block(){
                 return false;
             }
     }
-}
+}*/
 
 export function createSocialLinks(){
     const social = document.getElementById('socialRow');
