@@ -27,7 +27,7 @@ export const socialLinks = [
 ];
 export const whereNextLinks = [
     {
-        url: 'https://gitgub.com/D4nRossi',
+        url: 'https://github.com/D4nRossi',
         text: 'Meus repositórios',
         active: true
     },
