@@ -22,7 +22,7 @@ export const socialLinks = [
     {
         url: 'https://discord.gg/BTtGEmysF3',
         iconName: 'discord',
-        active: true
+        active: false
     }
 ];
 export const whereNextLinks = [
@@ -39,7 +39,7 @@ export const whereNextLinks = [
     {
         url: 'https://www.cursoemvideo.com/cursos/',
         text: 'Onde eu comecei',
-        active: true
+        active: false
     }
 ];
 export const headerName = {
@@ -53,3 +53,8 @@ export const imagePath = {
 }
 
 export const showcaseContainer = document.querySelector('#showcase');
+
+export const layout1 = document.querySelector('#layout1')
+export const layout2 = document.querySelector('#layout2')
+export const layout3 = document.querySelector('#layout3')
+export const layout4 = document.querySelector('#layout4')

@@ -3,7 +3,8 @@ whereNextLinks,
 headerName, 
 resumeTagLineText, 
 imagePath, 
-showcaseContainer} from './data.js'
+showcaseContainer
+} from './data.js'
 
 /*export function dev(){
     window.oncontextmenu=function(){
@@ -35,6 +36,10 @@ showcaseContainer} from './data.js'
 
 export function createSocialLinks(){
     const social = document.getElementById('socialRow');
+    const title = document.querySelector('.whereTittle');
+
+    title.innerHTML = 'Profissional';
+
     for(let link of socialLinks){
         if(link.active == true){
             //renderizar no html
@@ -90,89 +95,49 @@ export function accountImage(){
     }
 }
 
-export function showcaseIcons(){
-    const iconContainer = document.querySelector('.showcase-icons');
+export function showcaseGrid(){
 
-    const title = document.querySelector('.tittle-showcase');
-    const title1 = 'Ultimos Projetos';
-    const title2 = 'Nerd Zone'
+    var title1 = "Últimos Projetos";
+    var title2 = "Discord";
+    var title3 = "Steam";
+    var title4 = "Playlist";
 
-    const icon1 = document.querySelector('.icon1');
-    const icon2 = document.querySelector('.icon2');
+    var link1 = 'https://github.com/D4nRossi'
+    var link2 = 'https://discord.gg/BTtGEmysF3'
+    var link3 = 'https://steamcommunity.com/profiles/76561198326638076/'
+    var link4 = 'https://open.spotify.com/playlist/0Hjv3kha6YJGAMCeTawUiv?si=1fbaaaf23d704335'
 
-    const iCode = '<i class="fa-solid fa-code active"id="code"></i>';
-    const whiteICode = '<i class="fa-solid fa-code active"id="code" style="color: #fff"></i>';
-    const blackICode = '<i class="fa-solid fa-code active"id="code" style="color: #000"></i>';
-    const iEngine = '<i class="fa-solid fa-gears" id="engines"></i>';
-    const whiteIEngine = '<i class="fa-solid fa-gears" id="engines" style="color: #fff"></i>';
-    const blackIEngine = '<i class="fa-solid fa-gears" id="engines" style="color: #000"></i>';
+    const gridTitle = document.querySelector('.tittle-showcase');
+    const gridName = 'Shortcuts';
 
-    const layout1 = document.querySelector('#layout1');
-    const layout2 = document.querySelector('#layout2');
-    const layout3 = document.querySelector('#layout3');
-    const layout4 = document.querySelector('#layout4');
+    const header = document.querySelector('.tittle-showcase');
 
-    window.onload = title.innerHTML = title1
-    window.onload = icon1.innerHTML = iCode;
-    window.onload = icon2.innerHTML = iEngine;
-    window.onload = icon1.innerHTML = blackICode;        
+    const layout1 = document.querySelector('#layout1')
+    const layout2 = document.querySelector('#layout2')
+    const layout3 = document.querySelector('#layout3')
+    const layout4 = document.querySelector('#layout4')
 
-    if(title.innerHTML = title1){
-        layout1.innerHTML = 'Clone LinkTree';
-        layout2.innerHTML = 'Jogo da Memoria';
-        layout3.innerHTML = 'Pedra Papel Tesoura';
-        layout4.innerHTML = 'Crud';
-    }
+    layout1.innerHTML = title1;
+    layout2.innerHTML = title2;
+    layout3.innerHTML = title3;
+    layout4.innerHTML = title4;
 
-    icon2.addEventListener('click', ()=>{
-        icon1.classList.remove('active');
-        icon1.innerHTML = whiteICode;
+    layout1.addEventListener('click', ()=>{
+        window.open(link1);
+    })
+    layout2.addEventListener('click', ()=>{
+        window.open(link2);
+    })
+    layout3.addEventListener('click', ()=>{
+        window.open(link3);
+    })
+    layout4.addEventListener('click', ()=>{
+        window.open(link4);
+    })
 
-        icon2.innerHTML = blackIEngine
-        icon2.classList.add('active');
-
-        title.textContent = title2;
-
-        layout1.innerHTML = 'Minha Config';
-        layout2.innerHTML = 'Extensoes do VsCode';
-        layout3.innerHTML = 'Cursos';
-        layout4.innerHTML = 'Não sei oq colocar';
-    });
-
-    icon1.addEventListener('click', ()=>{
-        icon2.classList.remove('active');
-        icon2.innerHTML = whiteIEngine;
-
-        icon1.innerHTML = blackICode;
-        icon1.classList.add('active');
-
-        title.textContent = title1;
-
-        layout1.innerHTML = 'Clone Linktree';
-        layout2.innerHTML = 'Jogo da Memoria';
-        layout3.innerHTML = 'Pedra Papel Tesoura';
-        layout4.innerHTML = 'Crud';
-
-    });
-
-    if(title.innerHTML = title1){
-        layout1.addEventListener('click', ()=>{
-
-        });
-        layout2.addEventListener('click', ()=>{
-            window.location.href = 'https://jogodamemorialegal.netlify.app/'
-        });
-        layout3.addEventListener('click', ()=>{
-            window.location.href = 'https://pedrapapeltesouradan.netlify.app/'
-        });
-        layout4.addEventListener('click', ()=>{
-            window.location.href = 'https://crud-danielrossi.netlify.app/'
-        });
-    }
-
+    header.innerHTML = 'Pessoal';
 
 }
-
 
 
 

@@ -4,7 +4,7 @@ createWhereNextLinks,
 accountName, 
 resume, 
 accountImage,
-showcaseIcons} from './modules.js'
+showcaseGrid} from './modules.js'
 
 
 
@@ -13,4 +13,4 @@ accountName();
 resume();
 createSocialLinks();
 createWhereNextLinks();
-showcaseIcons();
+showcaseGrid();
