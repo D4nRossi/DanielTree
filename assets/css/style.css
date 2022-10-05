@@ -143,16 +143,12 @@ body{
     color: #000;
 }
 
-.footer{
-    height: 130px;
-}
-
 .footer-info{
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     color: #000;
-    
+
 }
